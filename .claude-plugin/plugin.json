@@ -1,0 +1,19 @@
+{
+  "name": "sokie",
+  "displayName": "Sokie",
+  "version": "1.0.0",
+  "description": "Look after your Sokie MCP servers from Claude: see what's live, find out why calls fail, and roll back a bad deploy.",
+  "author": {
+    "name": "Abyssinia Labs",
+    "email": "hello@sokie.sh",
+    "url": "https://sokie.sh"
+  },
+  "homepage": "https://sokie.sh",
+  "repository": "https://github.com/Abyssinia-Labs/sokie-plugin",
+  "license": "MIT",
+  "keywords": ["sokie", "mcp-hosting", "deploys", "logs", "openapi"],
+  "icon": "./icon.png",
+  "documentationUrl": "https://sokie.sh/docs/manage-from-your-agent",
+  "privacyPolicyUrl": "https://sokie.sh/privacy",
+  "termsOfServiceUrl": "https://sokie.sh/terms"
+}

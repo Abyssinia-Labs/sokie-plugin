@@ -1,0 +1,16 @@
+{
+  "name": "sokie",
+  "owner": {
+    "name": "Abyssinia Labs",
+    "email": "hello@sokie.sh"
+  },
+  "description": "Sokie's plugin for Claude.",
+  "plugins": [
+    {
+      "name": "sokie",
+      "source": "./",
+      "description": "Look after your Sokie MCP servers from Claude: see what's live, find out why calls fail, and roll back a bad deploy.",
+      "category": "deployment"
+    }
+  ]
+}

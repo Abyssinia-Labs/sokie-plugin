@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "sokie": {
+      "type": "http",
+      "url": "https://mcp.sokie.sh/mcp"
+    }
+  }
+}
