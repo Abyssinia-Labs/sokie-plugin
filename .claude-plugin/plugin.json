@@ -1,7 +1,7 @@
 {
   "name": "sokie",
   "displayName": "Sokie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Look after your Sokie MCP servers from Claude: see what's live, find out why calls fail, and roll back a bad deploy.",
   "author": {
     "name": "Abyssinia Labs",
