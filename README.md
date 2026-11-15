@@ -7,6 +7,7 @@
 - **Sokie's MCP server**, at `https://mcp.sokie.sh/mcp`. It's Sokie's own server, running on Sokie, from the public repository [Abyssinia-Labs/sokie-mcp](https://github.com/Abyssinia-Labs/sokie-mcp). It has 17 tools: 13 that only read (servers, deploys, tools, calls, usage, the audit trail, and secret names but never their values), and 4 that change things (redeploy, restore a deploy, and change a tool's description, directly or by pull request).
 - **`find-failing-calls`**, a skill that reads a server's failed calls and its deploys, and says what went wrong and what to do next. It changes nothing.
 - **`roll-back-a-deploy`**, a skill that finds the deploy to go back to, shows what restoring it would change, and restores it only after you say yes.
+- **`build-a-screen`**, a skill that builds your own screen for a server's tools, the view agents like Claude show with a tool's answer. It works in the server's repository with the [Sokie CLI](https://sokie.sh/docs/cli) (`sokie views`, 0.12 or later), and only where the workspace has Screens in agents on, which is early access.
 
 ## Connect
 
@@ -25,7 +26,7 @@ A key works in one workspace, so a connection reaches one workspace and only the
 
 ## What it sends where
 
-The plugin runs no code of its own: it has two skills, written in Markdown, and the address of Sokie's server. Claude talks to that server over MCP, and the server calls Sokie's API at `api.sokie.cloud` with your key. Nothing goes anywhere else. Sokie's logs keep each call's tool, result and time, never what was sent or returned. See the [privacy policy](https://sokie.sh/privacy).
+The plugin runs no code of its own: it has three skills, written in Markdown, and the address of Sokie's server. Claude talks to that server over MCP, and the server calls Sokie's API at `api.sokie.cloud` with your key. Nothing goes anywhere else. Sokie's logs keep each call's tool, result and time, never what was sent or returned. See the [privacy policy](https://sokie.sh/privacy).
 
 To stop it, disconnect Claude on your [agents page](https://sokie.sh/agents/mighty-warthog-372), or revoke the key.
 
